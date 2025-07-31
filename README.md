@@ -1,9 +1,11 @@
 # Format on Save Plugin for Micro
 
-**Format on Save** is a [micro](https://github.com/zyedidia/micro) editor
+**Format on Save** is a [micro](https://micro-editor.github.io/) text editor
 plugin that automatically formats source code when saving a file.  
-Currently, it supports **Lua** via
-[StyLua](https://github.com/JohnnyMorganz/StyLua) and some other languages.
+By default, it supports **Lua** via
+[StyLua](https://github.com/JohnnyMorganz/StyLua) and several other languages.
+You can also configure custom formatters per filetype using the plugin's
+settings.
 
 See [help/fmtonsave.md](help/fmtonsave.md) for more details.
 

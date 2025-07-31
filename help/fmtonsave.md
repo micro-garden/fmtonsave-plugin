@@ -1,9 +1,11 @@
 # Format on Save Plugin
 
-**Format on Save** is a micro editor plugin that automatically formats source
-code when saving a file.  
-Currently, it supports **Lua** via
-[StyLua](https://github.com/JohnnyMorganz/StyLua) and some other languages.
+**Format on Save** is a plugin that automatically formats source code when
+saving a file.  
+By default, it supports **Lua** via
+[StyLua](https://github.com/JohnnyMorganz/StyLua) and several other languages.
+You can also configure custom formatters per filetype using the plugin's
+settings.
 
 ## Usage
 

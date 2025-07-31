@@ -1,6 +1,6 @@
 [{
 	"Name": "fmtonsave",
-	"Description": "Auto-format files on save in micro using formatters like StyLua.",
+	"Description": "Auto-format files on save using formatters like StyLua.",
 	"Author": "Aki Kareha",
 	"Tags": ["fmt", "format", "formatter", "stylua", "gofmt", "clang-format", "black"],
 	"Website": "https://github.com/akikareha/micro-fmtonsave-plugin",
