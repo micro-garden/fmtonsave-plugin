@@ -5,6 +5,8 @@ plugin that automatically formats source code when saving a file.
 Currently, it supports **Lua** via
 [StyLua](https://github.com/JohnnyMorganz/StyLua) and some other languages.
 
+See [help/fmtonsave.md](help/fmtonsave.md) for more details.
+
 ## Installation
 
 Place the plugin folder in `~/.config/micro/plug/fmtonsave/`, or clone it
