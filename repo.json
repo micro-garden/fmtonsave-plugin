@@ -4,6 +4,7 @@
 	"Author": "Aki Kareha",
 	"Tags": ["fmt", "format", "formatter", "stylua", "gofmt", "clang-format", "black"],
 	"Website": "https://github.com/akikareha/micro-fmtonsave-plugin",
+	"License": "MIT",
 	"Versions": [
 		{
 			"Version": "0.0.1",
