@@ -1,4 +1,4 @@
-VERSION = "0.0.1"
+VERSION = "0.0.2"
 
 local default_formatters = {
 	lua = { "stylua" },
@@ -116,8 +116,11 @@ function setFormatter(bp, args)
 	config.SetGlobalOption("fmtonsave.formatters", new_raw)
 end
 
+function preinit()
+	config.RegisterCommonOption("fmtonsave", "formatters", "")
+end
+
 function init()
-	config.RegisterGlobalOption("fmtonsave", "formatters", "")
 	config.MakeCommand("setfmtonsave", setFormatter, config.NoComplete)
 	config.AddRuntimeFile("fmtonsave", config.RTHelp, "help/fmtonsave.md")
 end
