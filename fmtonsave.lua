@@ -76,7 +76,7 @@ function onSave(bp)
 	running = false
 end
 
-function setFormatter(bp, args)
+function SetFmtOnSaveCmd(bp, args)
 	if #args == 0 then
 		micro.InfoBar():Message("Usage: setfmtonsave <cmd|false> [arg1] ...")
 		return
@@ -121,6 +121,6 @@ function preinit()
 end
 
 function init()
-	config.MakeCommand("setfmtonsave", setFormatter, config.NoComplete)
+	config.MakeCommand("setfmtonsave", SetFmtOnSaveCmd, config.NoComplete)
 	config.AddRuntimeFile("fmtonsave", config.RTHelp, "help/fmtonsave.md")
 end
