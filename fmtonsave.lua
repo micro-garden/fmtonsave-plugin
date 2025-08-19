@@ -1,4 +1,4 @@
-VERSION = "0.0.2"
+VERSION = "0.0.3"
 
 local default_formatters = {
 	lua = { "stylua" },
@@ -76,7 +76,7 @@ function onSave(bp)
 	running = false
 end
 
-function SetFmtOnSaveCmd(bp, args)
+function SetFmtOnSave(bp, args)
 	if #args == 0 then
 		micro.InfoBar():Message("Usage: setfmtonsave <cmd|false> [arg1] ...")
 		return
@@ -121,6 +121,6 @@ function preinit()
 end
 
 function init()
-	config.MakeCommand("setfmtonsave", SetFmtOnSaveCmd, config.NoComplete)
+	config.MakeCommand("setfmtonsave", SetFmtOnSave, config.NoComplete)
 	config.AddRuntimeFile("fmtonsave", config.RTHelp, "help/fmtonsave.md")
 end
